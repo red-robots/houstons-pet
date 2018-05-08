@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	font: {
+		family: $font-title;
+	}
+}
+
+.entry-content h1 {
+	font-size: 30px;
+}
+.sections h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+	@media screen and (min-width: $tabwidth) {
+		font-size: 30px;
+	}
+	@media screen and (min-width: $midwidth) {
+		font-size: 30px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		font-size: 40px;
+	}
+}

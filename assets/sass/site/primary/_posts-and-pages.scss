@@ -1,0 +1,75 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+section.home-services {
+	width: 100%;
+	background-color: $color-cream;
+	padding: 40px 0;
+	@media screen and (min-width: $tabwidth) {
+
+	}
+	@media screen and (min-width: $deskwidth) {
+	}
+	h2 {
+		width: 100%;
+		text-align: center;
+	}
+	.flexwrap {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		@media screen and (min-width: $tabwidth) {
+			flex-wrap: wrap;
+			align-items: flex-start;
+			flex-direction: row;
+			justify-content: space-around
+		}
+	}
+	.service {
+		text-align: center;
+		flex-basis: 100%;
+		@media screen and (min-width: $tabwidth) {
+			flex-basis: 50%;
+		}
+		@media screen and (min-width: $midwidth) {
+
+		}
+		@media screen and (min-width: $deskwidth) {
+			flex-basis: 25%;
+		}
+		.icon {
+			width: 100px;
+			img{width: 100%;}
+			margin: 10px auto;
+		}
+		h3 {
+			width: 100%;
+			text-transform: uppercase;
+		}
+	}
+}
