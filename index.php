@@ -62,6 +62,58 @@ get_header(); ?>
 		</div>
 		</section>
 
+		
+		<?php 
+		// query homepage
+		$post = get_post(51); 
+		setup_postdata( $post );
+
+		// section testimonials 
+		$title = get_field('title');
+		$short_description = get_field('short_description');
+		$link = get_field('link');
+		$button_text = get_field('button_text');
+		$photo = get_field('photo');
+
+		// section Join our team 
+		$jtitle = get_field('title_join');
+		$jshort_description = get_field('short_description_join');
+		$jlink = get_field('link_join');
+		$jbutton_text = get_field('button_text_join');
+		$jphoto = get_field('photo_join');
+
+		wp_reset_postdata(); 
+		
+		?>
+
+ 
+		
+		<section class="testimonials sections">
+			<div class="left padding">
+				<h2><?php echo $title; ?></h2>
+				<?php echo $short_description; ?>
+				<div class="button">
+					<a href="<?php echo $link; ?>"><?php echo $button_text; ?></a>
+				</div>
+			</div>
+			<div class="right">
+				<img src="<?php echo $photo['url']; ?>">
+			</div>
+		</section>
+
+		<section class="join sections">
+			<div class="left">
+				<img src="<?php echo $jphoto['url']; ?>">
+			</div>
+			<div class="right padding">
+				<h2><?php echo $jtitle; ?></h2>
+				<?php echo $jshort_description; ?>
+				<div class="button-white">
+					<a href="<?php echo $jlink; ?>"><?php echo $jbutton_text; ?></a>
+				</div>
+			</div>
+		</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
