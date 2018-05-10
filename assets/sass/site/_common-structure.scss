@@ -110,7 +110,7 @@ header#masthead {
 /* Logo */
 .logo , h1.logo {
 	width: 300px;
-	background-image: url(images/logo.png);	
+	// background-image: url(images/logo.png);	
 	margin: 10px auto;
 	@media screen and (min-width: $tabwidth) {
 		width: 200px;
@@ -141,15 +141,129 @@ header#masthead {
 .site-footer {
 	width: 100%;
 	clear: both;
+	background-color: $color-grey;
+}
+.center {
+	text-align: center;
+}
+.footer-contact {
+	width:100%;
+	margin: 0px auto;
+	text-align: center;
+	padding: 30px 0;
+	overflow: hidden;
+	@media screen and (min-width: $tabwidth) {
+		width:70%;
+	}
+	@media screen and (min-width: $midwidth) {
+		width:60%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width:50%;
+	}
+	.left, .right {
+		float: left;
+		padding: 0 5%;
+		width:50%;
+		color: $color-cream;
+		@media screen and (min-width: $tabwidth) {
+			
+			display: inline-block;
+		}
+		@media screen and (min-width: $midwidth) {
+		
+		}
+		@media screen and (min-width: $deskwidth) {
+			
+		}
+		a {
+			color: $color-cream;
+			text-decoration: none;
+		}
+		.phone {
+			font-size: 16px;
+			@media screen and (min-width: $tabwidth) {
+				font-size: 18px;
+			}
+			@media screen and (min-width: $midwidth) {
+				font-size: 24px;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 30px;
+			}
+		}
+		h3 {
+			font-size: 20px;
+			text-transform: uppercase;
+			margin: 0;
+			@media screen and (min-width: $tabwidth) {
+				font-size: 20px;
+			}
+			@media screen and (min-width: $midwidth) {
+				font-size: 24px;
+			}
+			@media screen and (min-width: $deskwidth) {
+				font-size: 30px;
+			}
+		}
+	}
+	.right {
+		border-left: 1px solid $color-cream;
+	}
+}
+.bottomnav {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	border-top: 1px solid $color-cream;
+	padding: 30px 0 30px 0;
+	.menu {
+		@media screen and (min-width: $tabwidth) {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-evenly;
+		}
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		display: inline-block;
+		text-transform: uppercase;
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 14px;
+			width: auto;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 18px;
+		}
+		@media screen and (min-width: $deskwidth) {
+			font-size: 20px;
+		}
+		a {
+			color: $color-cream;
+			text-decoration: none;
+			padding: 20px 5px;
+		}
+	}
+}
+.creds {
+	width: 100%;
+	padding: 40px 0;
+	font-size: 12px;
+	color: $color-cream;
 }
 .button, .button-white {
 	width: auto;
 	a {
-		
+		display: inline-block;
 		padding: 10px 20px;
 		text-transform: uppercase;
 		color: $color-grey;
 		text-decoration: none;
+		line-height: 2;
 		&:hover {
 			@include transition(all ease .3s);
 		}

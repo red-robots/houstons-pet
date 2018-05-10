@@ -12,7 +12,59 @@
  * @package ACStarter
  */
 
-get_header(); ?>
+get_header(); 
+
+	// query homepage
+	$post = get_post(51); 
+	setup_postdata( $post );
+
+	// section testimonials 
+	$title = get_field('title');
+	$short_description = get_field('short_description');
+	$link = get_field('link');
+	$button_text = get_field('button_text');
+	$photo = get_field('photo');
+
+	// section Join our team 
+	$jtitle = get_field('title_join');
+	$jshort_description = get_field('short_description_join');
+	$jlink = get_field('link_join');
+	$jbutton_text = get_field('button_text_join');
+	$jphoto = get_field('photo_join');
+
+	$cLogin =get_field('login_link', 'option');
+	$cSignup =get_field('new_client_link', 'option');
+
+	?>
+
+	<div class="flexslider">
+		<ul class="slides">
+		<?php if( have_rows('banners') ) : while( have_rows('banners') ) : the_row();
+			$image = get_sub_field('image');
+			$title = get_sub_field('title');
+			$subtitle = get_sub_field('subtitle');
+			$alignment = get_sub_field('alignment');
+
+		 ?>
+			<li>
+				<img src="<?php echo $image['url']; ?>">
+				<div class="banner-info <?php echo $alignment; ?>">
+					<?php if($title) { ?><h2><?php echo $title; ?></h2><?php } ?>
+					<?php if($subtitle) { ?><h3><?php echo $subtitle; ?></h3><?php } ?>
+					<div class="button">
+						<a href="<?php echo $cLogin; ?>">CLIENT LOGIN</a>
+					</div>
+					<div class="button">
+						<a href="<?php echo $cSignup; ?>">CREATE NEW ACCOUNT</a>
+					</div>
+				</div>
+			</li>
+		<?php endwhile; endif; ?>
+		</ul>
+	</div>
+
+
+	<?php wp_reset_postdata();  ?>
 
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
@@ -41,7 +93,7 @@ get_header(); ?>
 			<div class="service">
 				<div class="icon">
 					<?php if( $icon ) : ?>
-						<i class="<?php echo $icon; ?> fa-5x"></i>
+						<i class="<?php echo $icon; ?> fa-4x"></i>
 					<?php endif; ?>
 					<?php if( $noFont ) : ?>
 						<img src="<?php echo $noFont['url']; ?>">
@@ -62,31 +114,6 @@ get_header(); ?>
 		</div>
 		</section>
 
-		
-		<?php 
-		// query homepage
-		$post = get_post(51); 
-		setup_postdata( $post );
-
-		// section testimonials 
-		$title = get_field('title');
-		$short_description = get_field('short_description');
-		$link = get_field('link');
-		$button_text = get_field('button_text');
-		$photo = get_field('photo');
-
-		// section Join our team 
-		$jtitle = get_field('title_join');
-		$jshort_description = get_field('short_description_join');
-		$jlink = get_field('link_join');
-		$jbutton_text = get_field('button_text_join');
-		$jphoto = get_field('photo_join');
-
-		wp_reset_postdata(); 
-		
-		?>
-
- 
 		
 		<section class="testimonials sections">
 			<div class="left padding">
