@@ -79,12 +79,14 @@ jQuery(document).ready(function ($) {
 	});
 
 	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
+		FAQ dropdowns
+	__________________________________________
+	*/
+	$('.question').click(function() {
+	 
+	    $(this).next('.answer').slideToggle(500);
+	    $(this).toggleClass('close');
+	 
 	});
 	
 	

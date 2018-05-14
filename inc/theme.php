@@ -6,7 +6,8 @@
  *
  * @package ACStarter
  */
-
+// custom image size
+add_image_size('banner', 1200, 375, array('center', 'center') );
 /*-------------------------------------
 	Custom client login, link and title.
 ---------------------------------------*/
