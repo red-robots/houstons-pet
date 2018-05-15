@@ -61,9 +61,12 @@ section.home-services, .page-services {
 		flex-basis: 100%;
 		padding: 10px;
 		margin: 20px auto;
+
 		@media screen and (min-width: $tabwidth) {
 			flex-basis: 40%;
 			margin :0 0 40px 0;
+			display: flex;
+			flex-flow: column nowrap;
 		}
 		@media screen and (min-width: $midwidth) {
 
@@ -81,6 +84,11 @@ section.home-services, .page-services {
 		h3 {
 			width: 100%;
 			text-transform: uppercase;
+			
+		}
+		.button {
+			align-self: flex-end;
+			margin: auto;
 		}
 	}
 }

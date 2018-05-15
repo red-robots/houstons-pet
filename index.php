@@ -77,7 +77,8 @@ get_header();
 			$wp_query = new WP_Query();
 			$wp_query->query(array(
 			'post_type'=>'service',
-			'posts_per_page' => -1
+			'posts_per_page' => -1,
+			'post__not_in' => array(48)
 		));
 			if ($wp_query->have_posts()) : ?>
 		    <?php while ($wp_query->have_posts()) : $wp_query->the_post(); 
