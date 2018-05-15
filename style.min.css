@@ -1959,7 +1959,14 @@ section.home-services .service .button,.page-services .service .button{-webkit-a
 @media screen and (min-width:650px){.join-left{width:45%;float:left}
 }.join-right{width:100%;margin:0 0 30px 0}
 @media screen and (min-width:650px){.join-right{width:45%;float:right;padding:40px 0 0 0}
-}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+}section.about{width:100%}
+section.about.color1{background-color:#fedc32}
+section.about.color2{background-color:#4c4c4c;color:#fff}
+section.about.color2 h2,section.about.color2 h3,section.about.color2 h4,section.about.color2 h5,section.about.color2 h6{color:#fff}
+section.about.color3{background-color:#fff}
+section.about.color4{background-color:#fedc32}
+section.about.color1,section.about.color2,section.about.color3,section.about.color4{padding:30px 0}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
