@@ -9,13 +9,17 @@
 
 get_header(); 
 
+$cLogin =get_field('login_link', 'option');
+$cSignup =get_field('new_client_link', 'option');
+
 get_template_part('inc/banner');
 
 
 $wp_query = new WP_Query();
 	$wp_query->query(array(
 	'post_type'=>'service',
-	'posts_per_page' => -1
+	'posts_per_page' => -1,
+	'post__not_in' => array(48)
 ));
 	if ($wp_query->have_posts()) : ?>
 		<nav class="services">
@@ -30,7 +34,7 @@ $wp_query = new WP_Query();
 					<div class="icon">
 						
 						<?php if( $icon ) : ?>
-							<i class="<?php echo $icon; ?> fa-4x"></i>
+							<i class="<?php echo $icon; ?> fa-2x"></i>
 						<?php endif; ?>
 						<?php if( $noFont ) : ?>
 							<img src="<?php echo $noFont['url']; ?>">
@@ -81,14 +85,14 @@ wp_reset_query(); ?>
 				<h1><?php the_title(); ?></h1>
 				<?php echo $lDesc; ?>
 			</div>
-			<div class="button-wrapper">
+			<!-- <div class="button-wrapper">
 				<div class="button">
 					<a href="<?php echo $cLogin; ?>">CLIENT LOGIN</a>
 				</div>
 				<div class="button">
 					<a href="<?php echo $cSignup; ?>">CREATE NEW ACCOUNT</a>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<div class="rates">
@@ -127,9 +131,26 @@ wp_reset_query(); ?>
 					<a href="<?php echo $cSignup; ?>">CREATE NEW ACCOUNT</a>
 				</div>
 			</div>
+			<?php endwhile; // End of the loop. ?>
+			<section class="inhome">
+			<?php $post = get_post(48); 
+					setup_postdata( $post );
+					 
+						$desc = get_field('long_description');
+					 
+					 ?>
+				<h2><?php echo get_the_title(); ?></h2>
+				<div class="entry-content">
+					<?php echo $desc; ?>
+				</div>
+			</section>
 		</div>
 
-		<?php endwhile; // End of the loop. ?>
+		
+
+		
+		<?php wp_reset_postdata(); ?>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 </div>

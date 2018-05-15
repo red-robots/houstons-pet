@@ -7,13 +7,17 @@
  * @package ACStarter
  */
 
-
+$title = get_field('call_to_action_box_title');
+$copy = get_field('call_to_action_box_copy');
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
 	<?php //dynamic_sidebar( 'sidebar-1' ); ?>
 	<div class="cta">
-	<h3>Let's Get Started</h3>
+	<h3><?php echo $title; ?></h3>
+	<div class="copy">
+		<?php echo $copy; ?>
+	</div>
 		<div class="button-wrapper">
 			<div class="button">
 				<a href="<?php echo $cLogin; ?>">CLIENT LOGIN</a>

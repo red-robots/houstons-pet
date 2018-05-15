@@ -13,7 +13,8 @@ get_template_part('inc/banner');
 $wp_query = new WP_Query();
 	$wp_query->query(array(
 	'post_type'=>'service',
-	'posts_per_page' => -1
+	'posts_per_page' => -1,
+	'post__not_in' => array(48)
 ));
 	if ($wp_query->have_posts()) : ?>
 		<nav class="services">
@@ -28,7 +29,7 @@ $wp_query = new WP_Query();
 					<div class="icon">
 						
 						<?php if( $icon ) : ?>
-							<i class="<?php echo $icon; ?> fa-4x"></i>
+							<i class="<?php echo $icon; ?> fa-2x"></i>
 						<?php endif; ?>
 						<?php if( $noFont ) : ?>
 							<img src="<?php echo $noFont['url']; ?>">
@@ -60,7 +61,7 @@ wp_reset_query(); ?>
 			<?php endwhile; // End of the loop.
 			?>
 
-			<section class="home-services  sections">
+			<section class="page-services  sections">
 				
 				
 				<div class="flexwrap">
@@ -68,7 +69,8 @@ wp_reset_query(); ?>
 					$wp_query = new WP_Query();
 					$wp_query->query(array(
 					'post_type'=>'service',
-					'posts_per_page' => -1
+					'posts_per_page' => -1,
+					'post__not_in' => array(48)
 				));
 					if ($wp_query->have_posts()) : ?>
 				    <?php while ($wp_query->have_posts()) : $wp_query->the_post(); 
