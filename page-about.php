@@ -37,7 +37,7 @@ get_template_part('inc/banner');
 			<section class="about color1">
 				<div class="wrapper">
 					<div class="entry-content">
-						<?php echo $why; ?>
+						<?php echo $ourStory; ?>
 					</div>
 				</div>
 			</section>
@@ -46,7 +46,7 @@ get_template_part('inc/banner');
 			<section class="about color2">
 				<div class="wrapper">
 					<div class="entry-content">
-						<?php echo $what; ?>
+						<?php echo $why; ?>
 					</div>
 				</div>
 			</section>
@@ -55,7 +55,7 @@ get_template_part('inc/banner');
 			<section class="about color3">
 				<div class="wrapper">
 					<div class="entry-content">
-						<?php echo $ourStory; ?>
+						<?php echo $what; ?>
 					</div>
 				</div>
 			</section>
