@@ -9,7 +9,7 @@
  * @package ACStarter
  */
 	$phone = get_field('phone', 'option');
-	$email = get_field('phone', 'option');
+	$email = get_field('email', 'option');
 	$antispam = antispambot($email);
 ?>
 
