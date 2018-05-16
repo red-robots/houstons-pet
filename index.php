@@ -52,10 +52,10 @@ get_header();
 					<?php if($title) { ?><h2><?php echo $title; ?></h2><?php } ?>
 					<?php if($subtitle) { ?><h3><?php echo $subtitle; ?></h3><?php } ?>
 					<div class="button">
-						<a href="<?php echo $cLogin; ?>">CLIENT LOGIN</a>
+						<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
 					</div>
 					<div class="button">
-						<a href="<?php echo $cSignup; ?>">CREATE NEW ACCOUNT</a>
+						<a href="<?php echo $cSignup; ?>" target="_blank">CREATE NEW ACCOUNT</a>
 					</div>
 				</div>
 			</li>

@@ -259,14 +259,14 @@ section.home-services, .page-services {
 	width: auto;
 	overflow: hidden;
 	margin: 0 0 20px 0;	
-	background-color: rgba(255,255,255,.05);
+	// background-color: rgba(255,255,255,.05);
 	border-radius: 10px;
 }
 .question {
 	width: auto;
 	float:left;
 	margin: 10px;
-	background-color: $color-cream;
+	// background-color: $color-cream;
 	font-weight: bold;
 	font-size: 20px;
 	cursor:pointer;	
@@ -322,6 +322,7 @@ section.home-services, .page-services {
 }
 section.about {
 	width: 100%;
+	float: left;
 	// &.color1 {
 	// 	background-color: #fff;
 	// }
@@ -342,8 +343,32 @@ section.about {
 	&.color1, &.color2, &.color3, &.color4 {
 		padding: 30px 0;
 	}
+	.left {
+		@media screen and (min-width: $tabwidth) {
+			float: left;
+		}
+	}
+	.right {
+		@media screen and (min-width: $tabwidth) {
+			float: right;
+		}
+	}
+	.left, .right {
+		width: 100%;
+		@media screen and (min-width: $tabwidth) {
+			width: 45%;
+		}
+		img {
+			width: 100%;
+		}
+	}
 }
-
+.fourofour {
+	width: 100%;
+	img {
+		width: 100%;
+	}
+}
 
 
 

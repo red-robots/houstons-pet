@@ -9,6 +9,9 @@
 
 $title = get_field('call_to_action_box_title');
 $copy = get_field('call_to_action_box_copy');
+
+$cLogin =get_field('login_link', 'option');
+$cSignup =get_field('new_client_link', 'option');
 ?>
 
 <aside id="secondary" class="widget-area" role="complementary">
@@ -20,10 +23,10 @@ $copy = get_field('call_to_action_box_copy');
 	</div>
 		<div class="button-wrapper">
 			<div class="button">
-				<a href="<?php echo $cLogin; ?>">CLIENT LOGIN</a>
+				<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
 			</div>
 			<div class="button">
-				<a href="<?php echo $cSignup; ?>">CREATE NEW ACCOUNT</a>
+				<a href="<?php echo $cSignup; ?>" target="_blank">CREATE NEW ACCOUNT</a>
 			</div>
 		</div>
 	</div>

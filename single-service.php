@@ -125,10 +125,10 @@ wp_reset_query(); ?>
 			</div>
 			<div class="button-wrapper">
 				<div class="button">
-					<a href="<?php echo $cLogin; ?>">CLIENT LOGIN</a>
+					<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
 				</div>
 				<div class="button">
-					<a href="<?php echo $cSignup; ?>">CREATE NEW ACCOUNT</a>
+					<a href="<?php echo $cSignup; ?>" target="_blank">CREATE NEW ACCOUNT</a>
 				</div>
 			</div>
 			<?php endwhile; // End of the loop. ?>

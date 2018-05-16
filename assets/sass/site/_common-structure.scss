@@ -12,7 +12,7 @@ body {
 	width: 100%;
 	margin: 0px auto;
 	padding: 20px;
-
+	// overflow: hidden;
 	
 	@media screen and (min-width: $tabwidth) {
 		width: 100%
@@ -52,6 +52,10 @@ body {
 	}
 	@media screen and (min-width: $deskwidth) {
 		/*width: 1200px;*/
+	}
+	ul {
+		margin: 0 0 20px 0;
+		list-style-type: none;
 	}
 	.cta {
 		background-color: $color-grey;
@@ -310,6 +314,18 @@ header#masthead {
 			color: $color-yellow
 		}
 	}
+}
+.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=image], .gform_wrapper .gform_footer input[type=submit] {
+	background-color: $color-yellow;
+		border: 1px solid $color-grey;
+		border-radius: 0;
+		padding: 10px 20px;
+		text-shadow: none;
+		box-shadow: none;
+		&:hover {
+			background-color: $color-grey;
+			color: $color-yellow
+		}
 }
 .banner {
 	width: 100%;
