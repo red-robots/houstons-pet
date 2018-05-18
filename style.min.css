@@ -1983,6 +1983,8 @@ section.about.color1,section.about.color2,section.about.color3,section.about.col
 }section.about .left,section.about .right{width:100%}
 @media screen and (min-width:650px){section.about .left,section.about .right{width:45%}
 }section.about .left img,section.about .right img{width:100%}
+section.about .small-testi{width:100%;padding:0 0 0 20px;margin:40px 0;border-left:5px solid #4c4c4c;font-style:italic}
+section.about .small-testi h3{margin:0 0 5px 0}
 .fourofour{width:100%}
 .fourofour img{width:100%}
 section.testi{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;margin:0 0 40px 0;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}

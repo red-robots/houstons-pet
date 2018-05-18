@@ -13,6 +13,19 @@ get_template_part('inc/banner');
 		<main id="main" class="site-main" role="main">
 
 			<?php
+
+			$wp_query = new WP_Query();
+			$wp_query->query(array(
+				'post_type'=>'testimonial',
+				'posts_per_page' => 1,
+				'paged' => $paged,
+			));
+			if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post();
+
+				$title = get_the_title();
+				$content = get_the_content();
+
+			endwhile; endif; wp_reset_query();
 			
 			while ( have_posts() ) : the_post(); 
 
@@ -71,6 +84,10 @@ get_template_part('inc/banner');
 				<div class="wrapper">
 					<div class="entry-content left">
 						<?php echo $what; ?>
+						<div class="small-testi">
+							<h3><?php echo $title; ?></h3>
+							<?php echo $content; ?>
+						</div>
 					</div>
 					<div class="image right">
 						<img src="<?php echo $iwhat['url']; ?>">

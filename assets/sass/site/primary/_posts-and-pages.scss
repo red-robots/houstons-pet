@@ -400,6 +400,18 @@ section.about {
 			width: 100%;
 		}
 	}
+	.small-testi {
+		width: 100%;
+		padding: 0 0 0 20px;
+		margin: 40px 0;
+		// border-top: 5px solid $color-grey;
+		// border-bottom: 5px solid $color-grey;
+		border-left: 5px solid $color-grey;
+		font-style: italic;
+		h3 {
+			margin: 0 0 5px 0;
+		}
+	}
 }
 .fourofour {
 	width: 100%;
