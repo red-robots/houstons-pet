@@ -11,7 +11,9 @@ get_template_part('inc/banner');
 <div class="wrapper">
 	<div id="primary" class="content-area-full">
 		<main id="main" class="site-main" role="main">
-
+		<div class="entry-content">
+			<h1><?php the_title(); ?></h1>
+		</div>
 			<?php
 				$wp_query = new WP_Query();
 				$wp_query->query(array(
