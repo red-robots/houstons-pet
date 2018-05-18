@@ -21,14 +21,14 @@ get_template_part('inc/banner');
 				'posts_per_page' => -1
 			));
 				if ($wp_query->have_posts()) : ?>
-				<section class="testi">
+				<section class="testi" id="container">
 					
 				
 			    <?php while ($wp_query->have_posts()) : ?>
 			        
 			    <?php $wp_query->the_post(); ?>	
 
-			    <div class="testimonial">
+			    <div class="testimonial item">
 			    	<h2><?php the_title(); ?></h2>
 			    	<?php the_content(); ?>
 			    </div>	

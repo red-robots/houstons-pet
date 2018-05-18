@@ -1987,9 +1987,11 @@ section.about .small-testi{width:100%;padding:0 0 0 20px;margin:40px 0;border-le
 section.about .small-testi h3{margin:0 0 5px 0}
 .fourofour{width:100%}
 .fourofour img{width:100%}
-section.testi{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;margin:0 0 40px 0;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
-section.testi .testimonial{padding:20px;background-color:#fffdea;border-bottom:3px solid #4c4c4c;overflow:hidden;margin:20px}
-.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+section.testi{width:100%;margin:0 0 40px 0;position:relative}
+section.testi .testimonial{padding:20px;background-color:#fffdea;border-bottom:10px solid #4c4c4c;overflow:hidden;margin-bottom:30px;width:100%;box-shadow:0 0 11px 1px rgba(0,0,0,0.32)}
+@media screen and (min-width:650px){section.testi .testimonial{width:28%}
+}@media screen and (min-width:900px){section.testi .testimonial{width:28%}
+}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}
