@@ -40,7 +40,7 @@
 				<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_id' => 'primary-menu' ) ); ?>
 			</section>
 			<div class="creds">
-				© <?php echo date('Y') . ' ' . get_bloginfo('name'); ?>. All Rights Reserved.
+				© <?php echo date('Y') . ' ' . get_bloginfo('name'); ?>. All Rights Reserved. Site by <a href="https://bellaworksweb.com" target="_blank">BW</a>.
 			</div>
 		</div><!-- wrapper -->
 	</footer><!-- #colophon -->

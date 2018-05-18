@@ -92,6 +92,44 @@ section.home-services, .page-services {
 		}
 	}
 }
+.first-time {
+	width: auto;
+	padding: 4px 30px;
+	background-color: $color-grey;
+	position: relative;
+	&:before {
+			content: '';
+			border-top: 1px solid $color-yellow;
+			width: 100%;
+			position: absolute;
+			top: 50%;
+    		left: 0;
+		}
+	h2 {
+		color: $color-yellow;
+		font-size: 1em;
+		margin: 0;
+		padding: 5px ;
+		background-color: $color-grey;
+		display: inline-block;
+		position: relative;
+		@media screen and (min-width: $tabwidth) {
+			font-size: 1em;
+		}
+		@media screen and (min-width: $midwidth) {
+			font-size: 1.5em;
+		}
+		@media screen and (min-width: $deskwidth) {
+
+		}
+		
+		span {
+			width: 100%;
+			padding: 4px;
+			$background-color: $color-grey;
+		}
+	}
+}
 .testimonials {
 	border-top: 10px solid $color-grey;
 }
@@ -367,6 +405,18 @@ section.about {
 	width: 100%;
 	img {
 		width: 100%;
+	}
+}
+section.testi {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	.testimonial {
+		padding: 20px;
+		background-color: $color-cream;
+		border-bottom: 3px solid $color-grey;
+		overflow: hidden;
 	}
 }
 

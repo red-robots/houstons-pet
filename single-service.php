@@ -133,6 +133,9 @@ wp_reset_query(); ?>
 			</div>
 			<?php endwhile; // End of the loop. ?>
 			<section class="inhome">
+			<div class="first-time">
+				<h2><span>First Time? Please Read Below!</span></h2>
+			</div>
 			<?php $post = get_post(48); 
 					setup_postdata( $post );
 					 
@@ -153,6 +156,11 @@ wp_reset_query(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+</div>
+
+
+<div class="dog">
+	<img src="<?php bloginfo('template_url'); ?>/images/dog.png">
 </div>
 <?php
 
