@@ -1898,6 +1898,11 @@ nav.services .icon img,nav.services .icon svg,nav.services .icon i{max-width:100
 }@media screen and (min-width:900px){nav.services h3{font-size:14px}
 }@media screen and (min-width:1200px){nav.services h3{font-size:16px}
 }.dog{width:450px;margin:0 auto 0 auto;clear:both;line-height:0;padding-top:40px}
+.social-links{padding:40px 0;text-align:center}
+.social-links ul{margin:0;padding:0;list-style-type:none;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.social-links li{display:inline-block;width:auto;margin:0 10px;width:50px;height:50px}
+.social-links a{color:#fffdea;text-decoration:none;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);display:block}
+.social-links a:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
