@@ -51,7 +51,7 @@ section.home-services, .page-services {
 		flex-wrap: wrap;
 		@media screen and (min-width: $tabwidth) {
 			flex-wrap: wrap;
-			align-items: flex-start;
+			align-items: stretch;
 			flex-direction: row;
 			justify-content: space-around
 		}
@@ -88,7 +88,7 @@ section.home-services, .page-services {
 		}
 		.button {
 			align-self: flex-end;
-			margin: auto;
+			margin: auto auto 0 auto;
 		}
 	}
 }

@@ -1868,7 +1868,7 @@ header#masthead .flexwrap{width:100%;display:-webkit-box;display:-webkit-flex;di
 }@media screen and (min-width:900px){.bottomnav li{font-size:18px}
 }@media screen and (min-width:1200px){.bottomnav li{font-size:20px}
 }.bottomnav li a{color:#fffdea;text-decoration:none;padding:20px 5px}
-.creds{width:100%;padding:40px 0;font-size:12px;color:#fffdea}
+.creds{width:100%;padding:40px 0 100px 0;font-size:12px;color:#fffdea}
 .creds a{color:#fffdea}
 .button-wrapper{width:100%;padding:30px 0}
 .button,.button-white{width:auto;display:inline-block;margin:0 5px 10px 0}
@@ -1903,6 +1903,8 @@ nav.services .icon img,nav.services .icon svg,nav.services .icon i{max-width:100
 .social-links li{display:inline-block;width:auto;margin:0 10px;width:50px;height:50px}
 .social-links a{color:#fffdea;text-decoration:none;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);display:block}
 .social-links a:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
+.sticky-footer{width:100%;position:fixed;bottom:0;left:0;padding:5px 0 5px 0;border-top:1px solid #fffdea;text-align:center;background:-webkit-linear-gradient(top,rgba(0,0,0,0.65) 0,transparent 100%);background:linear-gradient(to bottom,rgba(0,0,0,0.65) 0,transparent 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000',endColorstr='#00000000',GradientType=0)}
+.sticky-footer .button{margin:0 5px 0 0}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -1914,14 +1916,14 @@ section.home-services{background-color:#fffdea}
 section.home-services,.page-services{width:100%;padding:40px 0}
 section.home-services h2,.page-services h2{width:100%;text-align:center}
 section.home-services .flexwrap,.page-services .flexwrap{width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
-@media screen and (min-width:650px){section.home-services .flexwrap,.page-services .flexwrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
+@media screen and (min-width:650px){section.home-services .flexwrap,.page-services .flexwrap{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
 }section.home-services .service,.page-services .service{text-align:center;-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;padding:10px;margin:20px auto}
 @media screen and (min-width:650px){section.home-services .service,.page-services .service{-webkit-flex-basis:40%;-ms-flex-preferred-size:40%;flex-basis:40%;margin:0 0 40px 0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-flow:column nowrap;-ms-flex-flow:column nowrap;flex-flow:column nowrap}
 }@media screen and (min-width:1200px){section.home-services .service,.page-services .service{-webkit-flex-basis:25%;-ms-flex-preferred-size:25%;flex-basis:25%;padding:20px}
 }section.home-services .service .icon,.page-services .service .icon{width:100px;height:100px;margin:10px auto}
 section.home-services .service .icon img,section.home-services .service .icon svg,.page-services .service .icon img,.page-services .service .icon svg{width:100%}
 section.home-services .service h3,.page-services .service h3{width:100%;text-transform:uppercase}
-section.home-services .service .button,.page-services .service .button{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;margin:auto}
+section.home-services .service .button,.page-services .service .button{-webkit-align-self:flex-end;-ms-flex-item-align:end;align-self:flex-end;margin:auto auto 0 auto}
 .first-time{width:auto;padding:4px 30px;background-color:#4c4c4c;position:relative}
 .first-time:before{content:'';border-top:1px solid #fedc32;width:100%;position:absolute;top:50%;left:0}
 .first-time h2{color:#fedc32;font-size:1em;margin:0;padding:5px;background-color:#4c4c4c;display:inline-block;position:relative}

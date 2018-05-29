@@ -13,6 +13,8 @@
 	$antispam = antispambot($email);
 	$facebook = get_field('facebook', 'option');
 	$angieslist = get_field('angies_list', 'option');
+	$cLogin =get_field('login_link', 'option');
+	$cSignup =get_field('new_client_link', 'option');
 ?>
 
 	</div><!-- #content -->
@@ -46,14 +48,14 @@
 				<ul>
 					<?php if( $facebook ) { ?>
 					<li>
-						<a href="<?php echo $facebook; ?>">
+						<a href="<?php echo $facebook; ?>" target="_blank">
 							<i class="fab fa-facebook-square fa-3x"></i>
 						</a>
 					</li>
 					<?php } ?>
 					<?php if( $angieslist ) { ?>
 					<li>
-						<a href="<?php echo $angieslist; ?>">
+						<a href="<?php echo $angieslist; ?>" target="_blank">
 							<img src="<?php bloginfo('template_url'); ?>/images/angies-list.png" style="width: 50px;">
 						</a>
 					</li>
@@ -66,6 +68,15 @@
 		</div><!-- wrapper -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
+
+<div class="sticky-footer">
+	<div class="button">
+		<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
+	</div>
+	<div class="button">
+		<a href="<?php echo $cSignup; ?>" target="_blank">CREATE NEW ACCOUNT</a>
+	</div>
+</div>
 
 <?php wp_footer(); ?>
 
