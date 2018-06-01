@@ -1,3 +1,32 @@
 @import "buttons";
 
 @import "fields";
+
+label.bodyText, input.formGrey {
+	width: 100%;
+	clear: both;
+	display: block;
+}
+input.formGrey {
+	line-height: 2;
+	margin: 3px 0 20px 0;
+}
+input.radio {
+	display: inline-block;
+}
+.spacer {
+	width: auto;
+	margin: 0 10px 0 3px;
+}
+.formfooter {
+	width: 100%;
+	float: left;
+	margin: 20px 0;
+}
+.radios, select.standardInput {
+	margin: 0 0 20px 0;
+}
+select.standardInput {
+	clear: both;
+	width: auto;
+}

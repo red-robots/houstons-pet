@@ -25,7 +25,24 @@ body {
 		padding: 0px;
 	}
 }
-
+.wrapper-form {
+	width: 100%;
+	margin: 0px auto;
+	padding: 20px;
+	// overflow: hidden;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 100%
+	}
+	@media screen and (min-width: $midwidth) {
+		padding: 0 10px;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 50%;
+		padding: 0px;
+		float: left;
+	}
+}
 .content-area {
 	width: 100%;
 	margin: 0px auto;
@@ -283,7 +300,7 @@ header#masthead {
 	width: 100%;
 	padding: 30px 0;
 }
-.button, .button-white {
+.button, .button-white, input.button {
 	width: auto;
 	display: inline-block;
 	margin: 0 5px 10px 0;
@@ -308,6 +325,23 @@ header#masthead {
 			color: $color-yellow
 		}
 	}
+}
+input.button {
+	
+		background-color: $color-yellow;
+		border: 1px solid $color-grey;
+		border-radius: 0;
+		padding: 10px 20px;
+		text-shadow: none;
+		box-shadow: none;
+		text-transform: uppercase;
+		&:hover {
+			background-color: $color-grey;
+			color: $color-yellow;
+			text-shadow: none;
+			box-shadow: none;
+		}
+	
 }
 .button-white {
 	a {
