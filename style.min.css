@@ -1918,6 +1918,7 @@ nav.services .icon img,nav.services .icon svg,nav.services .icon i{max-width:100
 .social-links a:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 .sticky-footer{width:100%;position:fixed;bottom:0;left:0;padding:5px 0 5px 0;border-top:1px solid #fffdea;text-align:center;background:-webkit-linear-gradient(top,rgba(0,0,0,0.65) 0,transparent 100%);background:linear-gradient(to bottom,rgba(0,0,0,0.65) 0,transparent 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000',endColorstr='#00000000',GradientType=0)}
 .sticky-footer .button{margin:0 5px 0 0}
+#message{width:auto;display:block;margin-bottom:10px}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}

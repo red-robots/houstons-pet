@@ -18,6 +18,14 @@ jQuery(document).ready(function ($) {
         }
 	});
 
+
+	$('#email1, #confirm_email').on('keyup', function () {
+ 	 if ($('#email1').val() == $('#confirm_email').val()) {
+	    $('#message').html('Your emails match!').css('color', 'green');
+	  } else 
+	    $('#message').html('Your emails do not match.').css('color', 'red');
+	});
+
 	/*
 	*
 	*	Responsive iFrames

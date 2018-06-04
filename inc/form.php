@@ -21,11 +21,11 @@
           
 
             <label for='email' class="bodyText" required>Email:</label>
-            <input name='email1' class="formGrey" id='email' size="30" maxlength="60" />
+            <input name='email1' class="formGrey" id='email1' size="30" maxlength="60" />
 
             <label for='email' class="bodyText" required>Please Confirm Your Email Address:</label>
-            <input name='email2' class="formGrey" id='email_2' size="30" maxlength="60" onblur="emailCheck();"/>
-            <span id="emailMismatch" style="display:none;color:#f00;font-weight:bold;">The email addresses provided do not match!</span>
+            <input name='email2' class="formGrey" id='confirm_email' size="30" maxlength="60" />
+            <span id='message'></span>
         
             <label for='street1' class="bodyText">Address:</label>
             <input name="street1" type="text" class="formGrey" id="street1" value="" size="30" />
@@ -204,18 +204,18 @@
 <script language='javascript' src='https://leashtime.com/check-form.js'></script>
 <script language='javascript'>
 
-function emailCheck(){
-      var email1 = document.forms["myForm"]["email1"].value;
-      var email2 = document.forms["myForm"]["email2"].value;
-      if(email1 != email2){
-          // Display the error message
-          document.getElementById("emailMismatch").style.display="inline";
-          return false;
-      }else{
-// Hide the error message
-          document.getElementById("emailMismatch").style.display="none";
-      }
-  }
+// function emailCheck(){
+//       var email1 = document.forms["myForm"]["email1"].value;
+//       var email2 = document.forms["myForm"]["email2"].value;
+//       if(email1 != email2){
+//           // Display the error message
+//           document.getElementById("emailMismatch").style.display="inline";
+//           return false;
+//       }else{
+// // Hide the error message
+//           document.getElementById("emailMismatch").style.display="none";
+//       }
+//   }
 
         
 function jstrim(str) {
@@ -227,15 +227,15 @@ function validEmail(src) {
   return regex.test(src);
 
 }
-function checkEmail(theForm) {
-    if (theForm.EMAIL_1.value != theForm.EMAIL_2.value)
-    {
-        alert('Those emails don\'t match!');
-        return false;
-    } else {
-        return true;
-    }
-}
+// function checkEmail(theForm) {
+//     if (theForm.EMAIL_1.value != theForm.EMAIL_2.value)
+//     {
+//         alert('Those emails don\'t match!');
+//         return false;
+//     } else {
+//         return true;
+//     }
+// }
 function checkAndSend() {
     setPrettynames('meetingdate', 'Meeting Date', 'meetingtime', 'Meeting Time','fname','First name', 'lname', 'Last name');
     var mincontactmsg, args;
