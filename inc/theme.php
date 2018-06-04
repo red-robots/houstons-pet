@@ -14,10 +14,17 @@ add_image_size('banner', 1200, 375, array('center', 'center') );
 function my_login_logo() { ?>
 <style type="text/css">
   body.login div#login h1 a {
-  	background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png);
-  	background-size: 327px 67px;
-  	width: 327px;
-  	height: 67px;
+  	background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/logo.jpg);
+  	background-size: 301px 97px;
+    background-color: #4C4C4C;
+  	width: 301px;
+  	height: 97px;
+  }
+  body.login {
+    background-color: #4C4C4C;
+  }
+  p#nav a, p#backtoblog a {
+    color: #fff !important;
   }
 </style>
 <?php }
