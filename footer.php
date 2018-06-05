@@ -20,7 +20,17 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+
 		<div class="wrapper center">
+
+		<div class="footbutts">
+			<div class="button">
+				<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
+			</div>
+			<div class="button">
+				<a href="<?php echo $cSignup; ?>" >CREATE NEW ACCOUNT</a>
+			</div>
+		</div>
 
 			<section class="footer-contact sections">
 				<div class="left">
@@ -69,14 +79,14 @@
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
-<div class="sticky-footer">
+<!-- <div class="sticky-footer">
 	<div class="button">
 		<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
 	</div>
 	<div class="button">
 		<a href="<?php echo $cSignup; ?>" >CREATE NEW ACCOUNT</a>
 	</div>
-</div>
+</div> -->
 
 <?php wp_footer(); ?>
 

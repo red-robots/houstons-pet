@@ -12,6 +12,11 @@ get_template_part('inc/banner');
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+			<section class="intro entry-content">
+				<h1><?php the_title(); ?></h1>
+				<?php the_content(); ?>
+			</section>
+
 			<?php
 				$wp_query = new WP_Query();
 				$wp_query->query(array(
@@ -23,6 +28,11 @@ get_template_part('inc/banner');
 
 			    	<article class="blog entry-content">
 			    		<h2><?php the_title(); ?></h2>
+			    		<?php if ( has_post_thumbnail() ) { ?>
+							<div class="featuredimage">
+								<?php the_post_thumbnail(); ?>
+							</div>
+						<?php }  ?>
 			    		<div class="excerpt">
 			    			<?php the_excerpt(); ?>
 			    		</div>

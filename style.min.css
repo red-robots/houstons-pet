@@ -1918,7 +1918,10 @@ nav.services .icon img,nav.services .icon svg,nav.services .icon i{max-width:100
 .social-links a:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 .sticky-footer{width:100%;position:fixed;bottom:0;left:0;padding:5px 0 5px 0;border-top:1px solid #fffdea;text-align:center;background:-webkit-linear-gradient(top,rgba(0,0,0,0.65) 0,transparent 100%);background:linear-gradient(to bottom,rgba(0,0,0,0.65) 0,transparent 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000',endColorstr='#00000000',GradientType=0)}
 .sticky-footer .button{margin:0 5px 0 0}
+.footbutts{width:100%;padding:40px 0 20px 0}
 #message{width:auto;display:block;margin-bottom:10px}
+.featuredimage{width:100%;line-height:0;margin:0 0 20px 0}
+.featuredimage img{width:100%}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
@@ -2012,7 +2015,11 @@ section.testi{width:100%;margin:0 0 40px 0;position:relative}
 section.testi .testimonial{padding:20px;background-color:#fffdea;border-bottom:10px solid #4c4c4c;overflow:hidden;margin-bottom:30px;width:100%;box-shadow:0 0 11px 1px rgba(0,0,0,0.32)}
 @media screen and (min-width:650px){section.testi .testimonial{width:28%}
 }@media screen and (min-width:900px){section.testi .testimonial{width:28%}
-}.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
+}article.blog{width:100%;padding:5%;background-color:#fff;box-shadow:0 0 10px 2px rgba(0,0,0,0.16);-webkit-transition:all .3s ease;transition:all .3s ease}
+article.blog h2{text-transform:uppercase;font-size:30px}
+article.blog:hover{box-shadow:0 0 26px 2px rgba(0,0,0,0.25)}
+body.page-template-page-blog{background-color:#fffdea}
+.blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
 .infinite-scroll .posts-navigation,.infinite-scroll.neverending .site-footer{display:none}

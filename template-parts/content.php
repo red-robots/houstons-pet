@@ -23,12 +23,19 @@
 			}
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php acstarter_posted_on(); ?>
-		</div><!-- .entry-meta -->
+		<!-- <div class="entry-meta">
+			<?php //acstarter_posted_on(); ?>
+		</div><!-- .entry-meta  -->
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
+
+
+	<?php if ( has_post_thumbnail() ) { ?>
+		<div class="featuredimage">
+			<?php the_post_thumbnail(); ?>
+		</div>
+	<?php }  ?>
 
 	
 		<?php

@@ -28,6 +28,11 @@ get_header(); ?>
 
 				<article class="blog entry-content">
 		    		<h2><?php the_title(); ?></h2>
+		    		<?php if ( has_post_thumbnail() ) { ?>
+							<div class="featuredimage">
+								<?php the_post_thumbnail(); ?>
+							</div>
+						<?php }  ?>
 		    		<div class="excerpt">
 		    			<?php the_excerpt(); ?>
 		    		</div>
