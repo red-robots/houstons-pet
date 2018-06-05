@@ -471,7 +471,9 @@ article.blog {
 		box-shadow: 0px 0px 26px 2px rgba(0,0,0,0.25);
 	}
 }
-body.page-template-page-blog {
+body.page-template-page-blog,
+body.archive,
+body.category {
 	background-color: $color-cream;
 }
 

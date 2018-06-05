@@ -30,7 +30,7 @@ get_header(); ?>
 		    		<h2><?php the_title(); ?></h2>
 		    		<?php if ( has_post_thumbnail() ) { ?>
 							<div class="featuredimage">
-								<?php the_post_thumbnail(); ?>
+								<?php the_post_thumbnail('large'); ?>
 							</div>
 						<?php }  ?>
 		    		<div class="excerpt">
