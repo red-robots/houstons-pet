@@ -125,13 +125,13 @@
           <label for='note' class="bodyText">Three favorite movies?</label>
 
           <textarea name='x-multiline-Favorite Movies' cols="50" rows="4" class="formGrey" id='x-multiline-Favorite Movies'></textarea>
-         <label for='note' class="bodyText">Underwear?</label>
+        <!--  <label for='note' class="bodyText">Underwear?</label> -->
 
-          <div class="radios">
+         <!--  <div class="radios">
               <input type="radio" name="x-radio-Underwear" value="briefs" class="radio" /> <span class="spacer">briefs</span>
               <input type="radio" name="x-radio-Underwear" value="boxers" class="radio" /> <span class="spacer">boxers</span>
               <input type="radio" name="x-radio-Underwear" value="bloomers"  class="radio"/> <span class="spacer">bloomers</span>
-              </div>
+              </div> -->
             <label for='note' class="bodyText">Birthday?</label>
 
          
