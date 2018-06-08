@@ -122,9 +122,9 @@
        <label for='x-std-referralnote' class="bodyText">If you were referred by a veterinarian or one of our clients, please give us their name so we can say thank you.:</label>
        <input  class="formGrey" id='x-std-referralnote' name='x-std-referralnote' value=''  autocomplete='off'>
 
-          <label for='note' class="bodyText">Three favorite movies?</label>
+          <!-- <label for='note' class="bodyText">Three favorite movies?</label>
 
-          <textarea name='x-multiline-Favorite Movies' cols="50" rows="4" class="formGrey" id='x-multiline-Favorite Movies'></textarea>
+          <textarea name='x-multiline-Favorite Movies' cols="50" rows="4" class="formGrey" id='x-multiline-Favorite Movies'></textarea> -->
         <!--  <label for='note' class="bodyText">Underwear?</label> -->
 
          <!--  <div class="radios">
@@ -132,10 +132,10 @@
               <input type="radio" name="x-radio-Underwear" value="boxers" class="radio" /> <span class="spacer">boxers</span>
               <input type="radio" name="x-radio-Underwear" value="bloomers"  class="radio"/> <span class="spacer">bloomers</span>
               </div> -->
-            <label for='note' class="bodyText">Birthday?</label>
+          <!--   <label for='note' class="bodyText">Birthday?</label>
 
          
-              <input name="x-oneline-Birthday"  size="30" maxlength="60" class="formGrey"/>
+              <input name="x-oneline-Birthday"  size="30" maxlength="60" class="formGrey"/> -->
          
             
           <!-- Would you like to schedule a meeting with us? <input name='meet' id='yesmeet' type='radio' onChange='toggleMeeting(this)'> <label for='yesmeet'>yes</label> <input id='nomeet' name='meet' type='radio' onclick='toggleMeeting(this)' CHECKED> <label for='nomeet'>no</label> -->
