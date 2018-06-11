@@ -51,6 +51,17 @@ get_header();
 				<div class="banner-info <?php echo $alignment; ?>">
 					<?php if($title) { ?><h2><?php echo $title; ?></h2><?php } ?>
 					<?php if($subtitle) { ?><h3><?php echo $subtitle; ?></h3><?php } ?>
+					<div class="desktop">
+						<div class="button">
+							<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
+						</div>
+						<div class="button">
+							<a href="<?php echo $cSignup; ?>" >CREATE NEW ACCOUNT</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="buttonsmobile">
 					<div class="button">
 						<a href="<?php echo $cLogin; ?>" target="_blank">CLIENT LOGIN</a>
 					</div>
@@ -58,6 +69,8 @@ get_header();
 						<a href="<?php echo $cSignup; ?>" >CREATE NEW ACCOUNT</a>
 					</div>
 				</div>
+
+
 			</li>
 		<?php endwhile; endif; ?>
 		</ul>

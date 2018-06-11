@@ -273,8 +273,28 @@ html[xmlns] .flexslider .slides {
     right: 10px;
   }
 }
+.buttonsmobile {
+  text-align: center;
+  margin: 10px 0 0 0;
+  @media screen and (min-width: $tabwidth) {
+    display: none;
+  }
+}
 .banner-info {
   width: 100%;
+
+  .buttonsmobile {
+
+    @media screen and (min-width: $tabwidth) {
+      display: none;
+    }
+  }
+  .desktop {
+    display: none;
+    @media screen and (min-width: $tabwidth) {
+      display: block;
+    }
+  }
 
   @media screen and (min-width: $tabwidth) {
   }
@@ -289,9 +309,11 @@ html[xmlns] .flexslider .slides {
     font-size: 18px;
     text-transform: uppercase;
     line-height: 1;
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
     @media screen and (min-width: $tabwidth) {
-      color: #fff;
-      text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+      
+      
       font-size: 38px;
     }
     @media screen and (min-width: $midwidth) {
@@ -306,9 +328,10 @@ html[xmlns] .flexslider .slides {
     font-size: 16px;
     text-transform: capitalize;
     line-height: 1;
-    @media screen and (min-width: $tabwidth) {
-      color: #fff;
+    color: #fff;
       text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    @media screen and (min-width: $tabwidth) {
+      
       font-size: 22px;
     }
     @media screen and (min-width: $midwidth) {
@@ -320,13 +343,17 @@ html[xmlns] .flexslider .slides {
   }
   &.left {
     width: 100%;
-    position: relative;
-    text-align: center;
+   
+    position: absolute;
+    left: 5%;
+    top: 5%;
+
+    // h2 {
+    //   text-align: left;
+    // }
+      
     @media screen and (min-width: $tabwidth) {
-      position: absolute;
-      left: 5%;
-      top: 5%;
-      text-align: left;
+      
     }
     @media screen and (min-width: $midwidth) {
       
@@ -337,13 +364,13 @@ html[xmlns] .flexslider .slides {
   }
   &.center {
     width: 100%;
-    position: relative;
-    text-align: center;
-    @media screen and (min-width: $tabwidth) {
-      width: 50%;
+     width: 50%;
       position: absolute;
       left: 25%;
       bottom: 5%;
+    text-align: center;
+    @media screen and (min-width: $tabwidth) {
+     
     }
     @media screen and (min-width: $midwidth) {
       
@@ -354,12 +381,12 @@ html[xmlns] .flexslider .slides {
   }
   &.right {
     width: 100%;
-    position: relative;
-    text-align: center;
-    @media screen and (min-width: $tabwidth) {
-      position: absolute;
+    position: absolute;
       left: 5%;
       top: 5%;
+    text-align: center;
+    @media screen and (min-width: $tabwidth) {
+      
     }
     @media screen and (min-width: $midwidth) {
       

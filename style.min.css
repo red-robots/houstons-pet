@@ -1707,7 +1707,7 @@ a:hover,a:active{outline:0}
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .menu-toggle ul.sub-menu,.main-navigation.toggled ul ul.sub-menu{background-color:rgba(255,255,255,0.1)}
 @media screen and (min-width:650px){.menu-toggle{display:none}
-}button.menu-toggle{border:0;text-shadow:none;background-color:#ccc;color:#fff;box-shadow:none;width:auto;display:inline-block;margin:10px auto;border-radius:0;text-transform:uppercase;font-weight:300;font-size:20px}
+}button.menu-toggle{border:0;text-shadow:none;background-color:#fedc32;color:#000;box-shadow:none;width:auto;display:inline-block;margin:10px auto;border-radius:0;text-transform:uppercase;font-weight:300;font-size:20px}
 @media screen and (min-width:650px){button.menu-toggle{display:none}
 }.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
@@ -1804,22 +1804,24 @@ html[xmlns] .flexslider .slides{display:block}
 .flex-control-thumbs .flex-active{opacity:1;cursor:default}
 @media screen and (max-width:860px){.flex-direction-nav .flex-prev{opacity:1;left:10px}
 .flex-direction-nav .flex-next{opacity:1;right:10px}
+}.buttonsmobile{text-align:center;margin:10px 0 0 0}
+@media screen and (min-width:650px){.buttonsmobile{display:none}
 }.banner-info{width:100%}
-.banner-info h2{width:100%;font-size:18px;text-transform:uppercase;line-height:1}
-@media screen and (min-width:650px){.banner-info h2{color:#fff;text-shadow:2px 2px 2px black;font-size:38px}
+@media screen and (min-width:650px){.banner-info .buttonsmobile{display:none}
+}.banner-info .desktop{display:none}
+@media screen and (min-width:650px){.banner-info .desktop{display:block}
+}.banner-info h2{width:100%;font-size:18px;text-transform:uppercase;line-height:1;color:#fff;text-shadow:2px 2px 2px black}
+@media screen and (min-width:650px){.banner-info h2{font-size:38px}
 }@media screen and (min-width:900px){.banner-info h2{font-size:40px}
 }@media screen and (min-width:1200px){.banner-info h2{font-size:60px}
-}.banner-info h3{width:100%;font-size:16px;text-transform:capitalize;line-height:1}
-@media screen and (min-width:650px){.banner-info h3{color:#fff;text-shadow:2px 2px 2px black;font-size:22px}
+}.banner-info h3{width:100%;font-size:16px;text-transform:capitalize;line-height:1;color:#fff;text-shadow:2px 2px 2px black}
+@media screen and (min-width:650px){.banner-info h3{font-size:22px}
 }@media screen and (min-width:900px){.banner-info h3{font-size:34px}
 }@media screen and (min-width:1200px){.banner-info h3{font-size:40px}
-}.banner-info.left{width:100%;position:relative;text-align:center}
-@media screen and (min-width:650px){.banner-info.left{position:absolute;left:5%;top:5%;text-align:left}
-}.banner-info.center{width:100%;position:relative;text-align:center}
-@media screen and (min-width:650px){.banner-info.center{width:50%;position:absolute;left:25%;bottom:5%}
-}.banner-info.right{width:100%;position:relative;text-align:center}
-@media screen and (min-width:650px){.banner-info.right{position:absolute;left:5%;top:5%}
-}.banner-info .button{display:inline-block}
+}.banner-info.left{width:100%;position:absolute;left:5%;top:5%}
+.banner-info.center{width:100%;width:50%;position:absolute;left:25%;bottom:5%;text-align:center}
+.banner-info.right{width:100%;position:absolute;left:5%;top:5%;text-align:center}
+.banner-info .button{display:inline-block}
 .widget{margin:0 0 1.5em}
 .widget select{max-width:100%}
 *{-webkit-hyphens:none}
@@ -2018,7 +2020,7 @@ section.testi .testimonial{padding:20px;background-color:#fffdea;border-bottom:1
 }article.blog{width:100%;padding:5%;background-color:#fff;box-shadow:0 0 10px 2px rgba(0,0,0,0.16);-webkit-transition:all .3s ease;transition:all .3s ease}
 article.blog h2{text-transform:uppercase;font-size:30px}
 article.blog:hover{box-shadow:0 0 26px 2px rgba(0,0,0,0.25)}
-body.page-template-page-blog{background-color:#fffdea}
+body.page-template-page-blog,body.archive,body.category{background-color:#fffdea}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comment-content a{word-wrap:break-word}
 .bypostauthor{display:block}
