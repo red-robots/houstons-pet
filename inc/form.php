@@ -137,8 +137,10 @@
          
               <input name="x-oneline-Birthday"  size="30" maxlength="60" class="formGrey"/> -->
          
-            
-          <!-- Would you like to schedule a meeting with us? <input name='meet' id='yesmeet' type='radio' onChange='toggleMeeting(this)'> <label for='yesmeet'>yes</label> <input id='nomeet' name='meet' type='radio' onclick='toggleMeeting(this)' CHECKED> <label for='nomeet'>no</label> -->
+         <div class="hide"  style='display:none'>
+           Would you like to schedule a meeting with us? <input name='meet' id='yesmeet' type='radio' onChange='toggleMeeting(this)'> <label for='yesmeet'>yes</label> <input id='nomeet' name='meet' type='radio' onclick='toggleMeeting(this)' CHECKED> <label for='nomeet'>no</label>
+         </div>   
+          
 
           <div id='meetingdatetr0' style='display:none'>
           Please tell us when is convenient for you:</div>
@@ -192,7 +194,9 @@
             </noscript>
 
             <div class="formfooter">
-              <input class="button" type="button" value='Send Request' onclick='checkAndSend()' />
+              <!-- <input class="button" type="button" value='Send Request' onclick='checkAndSend()' /> -->
+              <input class="button" type="submit" value='Send Request' />
+
             </div>
             
                                 
