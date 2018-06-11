@@ -3,7 +3,7 @@
 <div class="wrapper-form">
   <form action="https://leashtime.com/prospect-request.php" method="post" name="prospectinforequest" >
     <input type='hidden' id='pbid' name='pbid' value='448'>
-      <input type='hidden' id='goback' name='goback' value='https://houstonsbestpetsitters.com/'> 
+      <input type='hidden' id='goback' name='goback' value='https://houstonsbestpetsitters.com/thank-you/'> 
       <input type='text' style='display:none' id='address3' name='address3' value=''> 
       <input type='hidden' id='modelnum' name='modelnum' value=''> 
         <label for='fname' class="bodyText">First Name:</label>
