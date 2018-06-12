@@ -21,7 +21,7 @@
           
 
             <label for='email' class="bodyText" required>Email:</label>
-            <input name='email1' class="formGrey" id='email1' size="30" maxlength="60" />
+            <input name='email' class="formGrey" id='email' size="30" maxlength="60" />
 
             <label for='email' class="bodyText" required>Please Confirm Your Email Address:</label>
             <input name='email2' class="formGrey" id='confirm_email' size="30" maxlength="60" />
