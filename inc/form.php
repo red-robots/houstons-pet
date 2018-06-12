@@ -194,8 +194,8 @@
             </noscript>
 
             <div class="formfooter">
-              <!-- <input class="button" type="button" value='Send Request' onclick='checkAndSend()' /> -->
-              <input class="button" type="submit" value='Send Request' />
+              <input class="button" type="button" value='Send Request' onclick='checkAndSend()' />
+              <!-- <input class="button" type="submit" value='Send Request' /> -->
 
             </div>
             
@@ -208,18 +208,6 @@
 <script language='javascript' src='https://leashtime.com/check-form.js'></script>
 <script language='javascript'>
 
-// function emailCheck(){
-//       var email1 = document.forms["myForm"]["email1"].value;
-//       var email2 = document.forms["myForm"]["email2"].value;
-//       if(email1 != email2){
-//           // Display the error message
-//           document.getElementById("emailMismatch").style.display="inline";
-//           return false;
-//       }else{
-// // Hide the error message
-//           document.getElementById("emailMismatch").style.display="none";
-//       }
-//   }
 
         
 function jstrim(str) {
