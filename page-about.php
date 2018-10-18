@@ -18,7 +18,7 @@ get_template_part('inc/banner');
 			$wp_query->query(array(
 				'post_type'=>'testimonial',
 				'posts_per_page' => 1,
-				'paged' => $paged,
+				'orderby' => 'rand',
 			));
 			if ($wp_query->have_posts()) : while ($wp_query->have_posts()) : $wp_query->the_post();
 
